@@ -54,7 +54,7 @@ public class GameController : MonoBehaviour
 
     void NudgeBodies(Vector2 gravityDir)
     {
-        Rigidbody2D[] bodies = FindObjectsOfType<Rigidbody2D>();
+        Rigidbody2D[] bodies = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
         Vector2 normalized = gravityDir.normalized;
 
         foreach (Rigidbody2D rb in bodies)
@@ -75,7 +75,7 @@ public class GameController : MonoBehaviour
 
     void AlignVelocitiesToGravity(Vector2 gravityDir)
     {
-        Rigidbody2D[] bodies = FindObjectsOfType<Rigidbody2D>();
+        Rigidbody2D[] bodies = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
 
         Vector2 normalizedGravity = gravityDir.normalized;
 
@@ -114,6 +114,34 @@ public class GameController : MonoBehaviour
         }
 
         cam.rotation = targetRotation;
+        StartCoroutine(WaitUntilSettled());
+    }
+
+    IEnumerator WaitUntilSettled()
+    {
+        Rigidbody2D[] bodies = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
+
+        bool allSleeping = false;
+
+        while (!allSleeping)
+        {
+            allSleeping = true;
+
+            foreach (Rigidbody2D rb in bodies)
+            {
+                if (rb.bodyType != RigidbodyType2D.Dynamic)
+                    continue;
+
+                if (!rb.IsSleeping())
+                {
+                    allSleeping = false;
+                    break;
+                }
+            }
+
+            yield return null;
+        }
+
         isRotating = false;
     }
 }
