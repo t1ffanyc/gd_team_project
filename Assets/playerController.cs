@@ -24,12 +24,14 @@ public class playerController : MonoBehaviour
         {
             hasKey = true;
             collision.transform.parent.gameObject.SetActive(false);
+            Debug.Log("key collected!");
         }
         else if (collision.gameObject.tag == "Door")
         {
             if (hasKey)
             {
                 nextLevel.Invoke();
+                Debug.Log("next level!");
             }
         }
     }
