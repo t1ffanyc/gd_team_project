@@ -122,8 +122,10 @@ public class GameController : MonoBehaviour
         Rigidbody2D[] bodies = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
 
         bool allSleeping = false;
+        float waitTime = 0f;
+        float maxWaitTime = 5f; // Adjust this value as needed
 
-        while (!allSleeping)
+        while (!allSleeping && waitTime < maxWaitTime)
         {
             allSleeping = true;
 
@@ -139,6 +141,7 @@ public class GameController : MonoBehaviour
                 }
             }
 
+            waitTime += Time.deltaTime;
             yield return null;
         }
 
