@@ -23,7 +23,7 @@ public class playerController : MonoBehaviour
         if (collision.gameObject.tag == "Key")
         {
             hasKey = true;
-            collision.gameObject.SetActive(false);
+            collision.transform.parent.gameObject.SetActive(false);
         }
         else if (collision.gameObject.tag == "Door")
         {
