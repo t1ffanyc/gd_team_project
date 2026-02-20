@@ -1,16 +1,23 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using System.Collections;
+using UnityEngine.Events;
 
 public class Spike : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public UnityEvent playerDeath;
+    
     void Start()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    
+    private void OnCollisionEnter2D (Collision2D collision)
     {
-        
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            playerDeath.Invoke();
+        }
     }
 }
