@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour
     {
         if(isRotating) return;
         Debug.Log("rotate left");
-        gravityState = (gravityState + 1) % 4;
+        gravityState = (gravityState + 3) % 4;
         RotateWorld();
     }
 
@@ -34,7 +34,7 @@ public class GameController : MonoBehaviour
     {
         if(isRotating) return;
         Debug.Log("rotate right");
-        gravityState = (gravityState + 3) % 4;
+        gravityState = (gravityState + 1) % 4;
         RotateWorld();
     }
 
