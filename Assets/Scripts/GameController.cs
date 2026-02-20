@@ -46,51 +46,7 @@ public class GameController : MonoBehaviour
         Vector2 newGravity = Quaternion.Euler(0, 0, targetAngle) * baseGravity;
         Physics2D.gravity = newGravity;
 
-        NudgeBodies(newGravity);
-        AlignVelocitiesToGravity(newGravity);
-
         StartCoroutine(SmoothRotate(targetAngle));
-    }
-
-    void NudgeBodies(Vector2 gravityDir)
-    {
-        Rigidbody2D[] bodies = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
-        Vector2 normalized = gravityDir.normalized;
-
-        foreach (Rigidbody2D rb in bodies)
-        {
-            if (rb.bodyType != RigidbodyType2D.Dynamic)
-                continue;
-
-            Debug.Log("hello!");
-
-            // Clear sideways motion
-            rb.linearVelocity = Vector2.zero;
-            rb.angularVelocity = 0f;
-
-            // Tiny push along gravity direction
-            rb.position += normalized * 0.01f;
-        }
-    }
-
-    void AlignVelocitiesToGravity(Vector2 gravityDir)
-    {
-        Rigidbody2D[] bodies = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
-
-        Vector2 normalizedGravity = gravityDir.normalized;
-
-        foreach (Rigidbody2D rb in bodies)
-        {
-            if (rb.bodyType != RigidbodyType2D.Dynamic)
-                continue;
-
-            // Remove sideways component of velocity
-            float velocityAlongGravity = Vector2.Dot(rb.linearVelocity, normalizedGravity);
-            rb.linearVelocity = normalizedGravity * velocityAlongGravity;
-
-            // Optional: prevent tipping
-            rb.angularVelocity = 0f;
-        }
     }
 
     IEnumerator SmoothRotate(float targetAngle)
