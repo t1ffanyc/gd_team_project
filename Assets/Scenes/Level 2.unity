@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1358799507851716327, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 1806123577236874932, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.11
@@ -1871,6 +1875,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1358799507851716327, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 1806123577236874932, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
@@ -1926,6 +1934,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1358799507851716327, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
       propertyPath: m_Name
+      value: Spike
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358799507851716327, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+      propertyPath: m_TagString
       value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 1806123577236874932, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
@@ -1985,6 +1997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1358799507851716327, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     - target: {fileID: 1806123577236874932, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.08
@@ -2041,6 +2057,10 @@ PrefabInstance:
     - target: {fileID: 1358799507851716327, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
       propertyPath: m_Name
       value: Spike (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358799507851716327, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+      propertyPath: m_TagString
+      value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 1806123577236874932, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2464,6 +2484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7901236901695343174, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2471,6 +2495,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7901236901695343174, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9131713033238089304}
+    - targetCorrespondingSourceObject: {fileID: 7901236901695343174, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9131713033238089305}
+    - targetCorrespondingSourceObject: {fileID: 7901236901695343174, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9131713033238089306}
   m_SourcePrefab: {fileID: 100100000, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
 --- !u!1 &9131713033238089303 stripped
 GameObject:
@@ -2492,18 +2522,59 @@ MonoBehaviour:
   nextLevel:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
+      - m_Target: {fileID: 9131713033238089306}
+        m_TargetAssemblyTypeName: NewSceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  playerDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9131713033238089305}
+        m_TargetAssemblyTypeName: NewSceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9131713033238089305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131713033238089303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b963cb659974d44d782d9ee4ab414f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewSceneLoader
+  sceneToLoad: Level 2
+--- !u!114 &9131713033238089306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131713033238089303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b963cb659974d44d782d9ee4ab414f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewSceneLoader
+  sceneToLoad: Level 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
