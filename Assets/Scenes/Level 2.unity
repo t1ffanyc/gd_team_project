@@ -2406,19 +2406,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4930090725481114773, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_Size.x
-      value: 0.6761307
+      value: 0.68142295
       objectReference: {fileID: 0}
     - target: {fileID: 4930090725481114773, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_Size.y
-      value: 0.7503508
+      value: 0.52807426
       objectReference: {fileID: 0}
     - target: {fileID: 4930090725481114773, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_Offset.x
-      value: -0.000000029802322
+      value: -0.031753823
       objectReference: {fileID: 0}
     - target: {fileID: 4930090725481114773, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_Offset.y
-      value: -0.12482461
+      value: -0.013686359
       objectReference: {fileID: 0}
     - target: {fileID: 6318760309015482139, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2504,6 +2504,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  playerDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -498,7 +498,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 843713336}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2575,19 +2575,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4930090725481114773, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_Size.x
-      value: 0.6761307
+      value: 0.68405104
       objectReference: {fileID: 0}
     - target: {fileID: 4930090725481114773, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_Size.y
-      value: 0.7503508
+      value: 0.5285836
       objectReference: {fileID: 0}
     - target: {fileID: 4930090725481114773, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_Offset.x
-      value: -0.000000029802322
+      value: -0.030360937
       objectReference: {fileID: 0}
     - target: {fileID: 4930090725481114773, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_Offset.y
-      value: -0.12482461
+      value: -0.01394102
       objectReference: {fileID: 0}
     - target: {fileID: 4930090725481114773, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_IsTrigger
@@ -2603,11 +2603,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6318760309015482139, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.17
+      value: -4.083
       objectReference: {fileID: 0}
     - target: {fileID: 6318760309015482139, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.61
+      value: -2.673
       objectReference: {fileID: 0}
     - target: {fileID: 6318760309015482139, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2720,3 +2720,4 @@ SceneRoots:
   - {fileID: 8094372125358541887}
   - {fileID: 822145355}
   - {fileID: 36090115}
+  - {fileID: 1112668992}
