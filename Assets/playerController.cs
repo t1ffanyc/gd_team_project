@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+
 public class playerController : MonoBehaviour
 {
     public UnityEvent nextLevel;
     bool hasKey = false;
-
+    public UnityEvent playerDeath;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +17,15 @@ public class playerController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnCollisionEnter2D (Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Spike"))
+        {
+            playerDeath.Invoke();
+            Debug.Log("dead");
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)

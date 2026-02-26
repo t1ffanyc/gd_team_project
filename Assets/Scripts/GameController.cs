@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Physics2D.gravity= new Vector2(0,-9.8f);
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour
     {
         if(isRotating) return;
         Debug.Log("rotate left");
-        gravityState = (gravityState + 1) % 4;
+        gravityState = (gravityState + 3) % 4;
         RotateWorld();
     }
 
@@ -34,7 +34,7 @@ public class GameController : MonoBehaviour
     {
         if(isRotating) return;
         Debug.Log("rotate right");
-        gravityState = (gravityState + 3) % 4;
+        gravityState = (gravityState + 1) % 4;
         RotateWorld();
     }
 
