@@ -328,8 +328,24 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7348948758537553070, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+      propertyPath: playerDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7348948758537553070, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+      propertyPath: playerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7348948758537553070, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+      propertyPath: playerDeath.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1358799507851716327, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
       propertyPath: m_Name
+      value: Spike
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358799507851716327, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+      propertyPath: m_TagString
       value: Spike
       objectReference: {fileID: 0}
     - target: {fileID: 1806123577236874932, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
@@ -384,10 +400,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -179.664
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6939833288368303770, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6939833288368303770, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6939833288368303770, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+    - {fileID: -3886766600585558100, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1358799507851716327, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1567103984}
   m_SourcePrefab: {fileID: 100100000, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
 --- !u!1 &1098147229
 GameObject:
@@ -1988,6 +2017,57 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1567103978 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1358799507851716327, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+  m_PrefabInstance: {fileID: 822145355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1567103984
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567103978}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2118156619
 GameObject:
   m_ObjectHideFlags: 0
@@ -2321,6 +2401,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.12482461
       objectReference: {fileID: 0}
+    - target: {fileID: 4930090725481114773, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6318760309015482139, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2373,6 +2457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7901236901695343174, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2380,6 +2468,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7901236901695343174, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9131713033238089304}
+    - targetCorrespondingSourceObject: {fileID: 7901236901695343174, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9131713033238089310}
   m_SourcePrefab: {fileID: 100100000, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
 --- !u!1 &9131713033238089303 stripped
 GameObject:
@@ -2400,19 +2491,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   nextLevel:
     m_PersistentCalls:
+      m_Calls: []
+  playerDeath:
+    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
+      - m_Target: {fileID: 9131713033238089310}
+        m_TargetAssemblyTypeName: NewSceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &9131713033238089310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131713033238089303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b963cb659974d44d782d9ee4ab414f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewSceneLoader
+  sceneToLoad: Level 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
