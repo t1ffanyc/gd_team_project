@@ -178,7 +178,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!1 &1098147229
 GameObject:
@@ -2432,6 +2432,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7901236901695343174, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9131713033238089304}
+    - targetCorrespondingSourceObject: {fileID: 7901236901695343174, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9131713033238089306}
+    - targetCorrespondingSourceObject: {fileID: 7901236901695343174, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9131713033238089305}
   m_SourcePrefab: {fileID: 100100000, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
 --- !u!1 &9131713033238089303 stripped
 GameObject:
@@ -2453,13 +2459,13 @@ MonoBehaviour:
   nextLevel:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
+      - m_Target: {fileID: 9131713033238089305}
+        m_TargetAssemblyTypeName: NewSceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2467,9 +2473,47 @@ MonoBehaviour:
         m_CallState: 2
   playerDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9131713033238089306}
+        m_TargetAssemblyTypeName: NewSceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   source: {fileID: 367731650}
   eatClip: {fileID: 8300000, guid: 4e1bbc6f55f284bdc930c4d200e323d6, type: 3}
+--- !u!114 &9131713033238089305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131713033238089303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b963cb659974d44d782d9ee4ab414f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewSceneLoader
+  sceneToLoad: Level 2
+--- !u!114 &9131713033238089306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131713033238089303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b963cb659974d44d782d9ee4ab414f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewSceneLoader
+  sceneToLoad: Level 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
