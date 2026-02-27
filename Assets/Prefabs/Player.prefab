@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 3999968842808632260}
   - component: {fileID: 4930090725481114773}
   - component: {fileID: 4678395332044965662}
+  - component: {fileID: 8863954869182877831}
+  - component: {fileID: 8991454172833999506}
+  - component: {fileID: 1343805175599948820}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -155,7 +158,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.031905055, y: -0.016646147}
+  m_Offset: {x: -0.03175381, y: -0.015009433}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -165,7 +168,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.69204664, y: 0.5339086}
+  m_Size: {x: 0.6761306, y: 0.5307204}
   m_EdgeRadius: 0
 --- !u!95 &4678395332044965662
 Animator:
@@ -189,3 +192,73 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8863954869182877831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7901236901695343174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6275d7ac19c064e28a416ff68f45757b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  nextLevel:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1343805175599948820}
+        m_TargetAssemblyTypeName: NewSceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  playerDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8991454172833999506}
+        m_TargetAssemblyTypeName: NewSceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  source: {fileID: 0}
+  eatClip: {fileID: 8300000, guid: 4e1bbc6f55f284bdc930c4d200e323d6, type: 3}
+--- !u!114 &8991454172833999506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7901236901695343174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b963cb659974d44d782d9ee4ab414f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewSceneLoader
+  sceneToLoad: Tutorial Level
+--- !u!114 &1343805175599948820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7901236901695343174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b963cb659974d44d782d9ee4ab414f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewSceneLoader
+  sceneToLoad: Level 1
