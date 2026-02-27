@@ -9,11 +9,13 @@ public class GameController : MonoBehaviour
     private int gravityState = 0;
     private bool isRotating = false;
     [SerializeField] private float rotationDuration;
+    private Transform player;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Physics2D.gravity= new Vector2(0,-9.8f);
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
@@ -45,6 +47,8 @@ public class GameController : MonoBehaviour
         Vector2 baseGravity = new Vector2(0, -9.81f);
         Vector2 newGravity = Quaternion.Euler(0, 0, targetAngle) * baseGravity;
         Physics2D.gravity = newGravity;
+
+        player.rotation = Quaternion.Euler(0, 0, targetAngle);
 
         StartCoroutine(SmoothRotate(targetAngle));
     }

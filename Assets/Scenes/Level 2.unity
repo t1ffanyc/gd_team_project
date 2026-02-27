@@ -287,6 +287,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79f5fcf3b859b45ce8c5ef41ad996875, type: 3}
+--- !u!82 &1318408257 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4085317047097443588, guid: 79f5fcf3b859b45ce8c5ef41ad996875, type: 3}
+  m_PrefabInstance: {fileID: 1318408256}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1416285472
 GameObject:
   m_ObjectHideFlags: 0
@@ -2419,6 +2424,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8863954869182877831, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 1318408257}
     - target: {fileID: 8991454172833999506, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: sceneToLoad
       value: Level 2
