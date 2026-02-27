@@ -7,6 +7,10 @@ public class playerController : MonoBehaviour
     public UnityEvent nextLevel;
     bool hasKey = false;
     public UnityEvent playerDeath;
+
+    [SerializeField] AudioSource source;
+    [SerializeField] AudioClip eatClip;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,6 +38,7 @@ public class playerController : MonoBehaviour
         {
             hasKey = true;
             collision.transform.parent.gameObject.SetActive(false);
+            source.PlayOneShot(eatClip);
             Debug.Log("key collected!");
         }
         else if (collision.gameObject.tag == "Door")

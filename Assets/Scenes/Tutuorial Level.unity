@@ -456,6 +456,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79f5fcf3b859b45ce8c5ef41ad996875, type: 3}
+--- !u!82 &229862659 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4085317047097443588, guid: 79f5fcf3b859b45ce8c5ef41ad996875, type: 3}
+  m_PrefabInstance: {fileID: 229862658}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &345130998 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4077264260403348537, guid: cb0a9bab665c042b9ac802c8bbc756f4, type: 3}
@@ -2807,6 +2812,8 @@ MonoBehaviour:
   playerDeath:
     m_PersistentCalls:
       m_Calls: []
+  source: {fileID: 229862659}
+  eatClip: {fileID: 8300000, guid: 4e1bbc6f55f284bdc930c4d200e323d6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
