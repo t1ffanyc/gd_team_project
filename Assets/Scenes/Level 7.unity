@@ -2677,7 +2677,12 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8863954869182877831, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
+      propertyPath: playerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 9131713033238089310}
+    m_RemovedComponents:
+    - {fileID: 8991454172833999506, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
