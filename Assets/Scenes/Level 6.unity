@@ -358,6 +358,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5214067455026154571, guid: 0d451de46a05242bc952fc17aefd1ae1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8422906301337073237, guid: c154749f6e03d4f4882f4ca8eb0c44bb, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2547,15 +2551,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5900071537602780666, guid: bfac8a39066044310a6f3375e6ff6b4e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5900071537602780666, guid: bfac8a39066044310a6f3375e6ff6b4e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5900071537602780666, guid: bfac8a39066044310a6f3375e6ff6b4e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5900071537602780666, guid: bfac8a39066044310a6f3375e6ff6b4e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2742,7 +2746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b963cb659974d44d782d9ee4ab414f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewSceneLoader
-  sceneToLoad: Level 7
+  sceneToLoad: Level 6
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
