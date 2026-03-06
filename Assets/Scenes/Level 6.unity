@@ -2587,7 +2587,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1343805175599948820, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: sceneToLoad
-      value: 7
+      value: Level 7
       objectReference: {fileID: 0}
     - target: {fileID: 3999968842808632260, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_CollisionDetection
@@ -2669,6 +2669,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8863954869182877831, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 602599788}
     - target: {fileID: 8863954869182877831, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: playerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
