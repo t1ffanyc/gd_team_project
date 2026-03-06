@@ -38,6 +38,11 @@ public class playerController : MonoBehaviour
         }
     }
 
+    public void StartGame()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level1");
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log($"Trigger hit: {collision.name} tag={collision.tag}");

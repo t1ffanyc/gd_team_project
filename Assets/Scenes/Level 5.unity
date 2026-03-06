@@ -2538,7 +2538,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1343805175599948820, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: sceneToLoad
-      value: 
+      value: Level 6
       objectReference: {fileID: 0}
     - target: {fileID: 3999968842808632260, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_CollisionDetection
