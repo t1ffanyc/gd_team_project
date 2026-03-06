@@ -76,7 +76,7 @@ public class playerController : MonoBehaviour
                     tutorialManager.OnDoorReached();
 
                 // IMPORTANT: comment this out if you want the congrats panel + button first
-                nextLevel.Invoke();
+                //nextLevel.Invoke();
             }
         }
     }
