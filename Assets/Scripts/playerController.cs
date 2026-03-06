@@ -61,6 +61,10 @@ public class playerController : MonoBehaviour
                 Debug.Log("Calling TutorialManager.OnBananaCollected()");
                 tutorialManager.OnBananaCollected();
             }
+            else
+            {
+                Debug.LogError("TutorialManager is NULL. Panel won't switch.");
+            }
 
             // Disable the whole key (parent). If your trigger is nested deeper, use root.
             if (collision.transform.parent != null)
@@ -76,11 +80,8 @@ public class playerController : MonoBehaviour
                 if (tutorialManager != null)
                     tutorialManager.OnDoorReached();
 
-                // Only invoke nextLevel if not on the tutorial level
-                if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "Tutuorial Level")
-                {
-                    nextLevel.Invoke();
-                }
+                // IMPORTANT: comment this out if you want the congrats panel + button first
+                //nextLevel.Invoke();
             }
         }
     }
