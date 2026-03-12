@@ -478,7 +478,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1343805175599948820, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: sceneToLoad
-      value: Level 9
+      value: Level 10
       objectReference: {fileID: 0}
     - target: {fileID: 6318760309015482139, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: m_LocalScale.x
@@ -538,7 +538,7 @@ PrefabInstance:
       objectReference: {fileID: 1980915781}
     - target: {fileID: 8991454172833999506, guid: 20805ca70f1754f59b66ce3acad2bf56, type: 3}
       propertyPath: sceneToLoad
-      value: Level 8
+      value: Level 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
