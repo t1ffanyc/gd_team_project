@@ -146,7 +146,7 @@ RectTransform:
   m_GameObject: {fileID: 80391790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1098597422}
@@ -154,8 +154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -188, y: 206}
-  m_SizeDelta: {x: -1313.4229, y: -684.2426}
+  m_AnchoredPosition: {x: -231, y: 197.51}
+  m_SizeDelta: {x: -1182.5505, y: -581.5326}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &80391792
 MonoBehaviour:
@@ -381,7 +381,7 @@ RectTransform:
   m_GameObject: {fileID: 183048745}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 382942980}
@@ -827,7 +827,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -1, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -58}
+  m_AnchoredPosition: {x: 0, y: -64}
   m_SizeDelta: {x: 160, y: 46.9066}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &476179184
@@ -1173,7 +1173,7 @@ RectTransform:
   m_GameObject: {fileID: 886645302}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1447609739}
@@ -1182,8 +1182,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00012207031}
-  m_SizeDelta: {x: -773.0891, y: -583.3959}
+  m_AnchoredPosition: {x: 0, y: 0.000015258789}
+  m_SizeDelta: {x: -247.17, y: -802.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &886645304
 MonoBehaviour:
@@ -1259,7 +1259,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -407.5204, y: -583.3959}
+  m_SizeDelta: {x: -520.16, y: -641.0969}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971454633
 MonoBehaviour:
@@ -1806,7 +1806,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\nCongrats on finishing the tutorial, \nyou are ready to play!\u200B"
+  m_text: "\n\nCongrats on finishing the tutorial.\n\nYou are ready to play!\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -1833,8 +1833,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2180,8 +2180,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3734,8 +3734,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 551.6877, y: 294.1057}
+  m_AnchoredPosition: {x: 0, y: 4.6477}
+  m_SizeDelta: {x: 551.6877, y: 313.4345}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1447609740
 MonoBehaviour:
@@ -3794,7 +3794,7 @@ MonoBehaviour:
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
   m_RegexValue: 
-  m_GlobalPointSize: 30
+  m_GlobalPointSize: 27
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -3823,7 +3823,13 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: "\n\nCongrats on finishing the tutorial, \nyou are ready to play!"
+  m_Text: '
+
+
+    Congrats on finishing the tutorial.
+
+
+    You are ready to play!'
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -4370,7 +4376,7 @@ RectTransform:
   m_GameObject: {fileID: 2092452211}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1596002341}
@@ -4378,8 +4384,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 203.26, y: 204.85}
-  m_SizeDelta: {x: -1306.5276, y: -681.9482}
+  m_AnchoredPosition: {x: 253, y: 197}
+  m_SizeDelta: {x: -1138.7957, y: -582.5514}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2092452213
 MonoBehaviour:
