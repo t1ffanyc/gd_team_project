@@ -13,12 +13,32 @@ public class playerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        // reset level‑9 counters
+        keysCollected = 0;
+        if (IsLevel9())
+        {
+            var keys = GameObject.FindGameObjectsWithTag("Key");
+            var uniqueRoots = new System.Collections.Generic.HashSet<GameObject>();
+            foreach (var key in keys)
+            {
+                uniqueRoots.Add(key.transform.root.gameObject);
+            }
+            keysNeeded = uniqueRoots.Count;
+            Debug.Log($"Level 9 detected {keysNeeded} keys needed");
+        }
     }
     
     [SerializeField] private TutorialManager tutorialManager;
 
     private bool hasKey = false;
+    // level-9 multi-key support
+    private int keysNeeded = 0; // auto-detected for level 9
+    private int keysCollected = 0;
+
+    private bool IsLevel9()
+    {
+        return UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level 9";
+    }
 
     void Awake()
     {
@@ -49,38 +69,60 @@ public class playerController : MonoBehaviour
 
         if (collision.CompareTag("Key"))
         {
-            hasKey = true;
+            if (IsLevel9())
+            {
+                // count keys for level 9
+                keysCollected++;
+                source.PlayOneShot(eatClip);
 
-            collision.transform.parent.gameObject.SetActive(false);
-            source.PlayOneShot(eatClip);
+                GameObject toDisable = collision.gameObject;
+                if (collision.transform.parent != null)
+                    toDisable = collision.transform.parent.gameObject;
+                else if (collision.transform.root != collision.transform)
+                    toDisable = collision.transform.root.gameObject;
+                toDisable.SetActive(false);
 
-            Debug.Log("key collected!");
+                Debug.Log($"key collected {keysCollected}/{keysNeeded}");
+            }
+            else
+            {
+                hasKey = true;
+                collision.transform.parent.gameObject.SetActive(false);
+                source.PlayOneShot(eatClip);
+
+                Debug.Log("key collected!");
+            }
 
             if (tutorialManager != null)
             {
                 Debug.Log("Calling TutorialManager.OnBananaCollected()");
                 tutorialManager.OnBananaCollected();
             }
-
-            // Disable the whole key (parent). If your trigger is nested deeper, use root.
-            if (collision.transform.parent != null)
-                collision.transform.parent.gameObject.SetActive(false);
-            else
-                collision.transform.root.gameObject.SetActive(false);
         }
         else if (collision.CompareTag("Door"))
         {
-            if (hasKey)
+            if (IsLevel9())
             {
-                Debug.Log("door reached!");
-                if (tutorialManager != null)
-                    tutorialManager.OnDoorReached();
-
-                // Only invoke nextLevel if not on the tutorial level
-                if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "Tutuorial Level")
+                if (keysNeeded > 0 && keysCollected < keysNeeded)
                 {
-                    nextLevel.Invoke();
+                    Debug.Log("need more keys before entering");
+                    return;
                 }
+            }
+            else
+            {
+                if (!hasKey)
+                    return;
+            }
+
+            Debug.Log("door reached!");
+            if (tutorialManager != null)
+                tutorialManager.OnDoorReached();
+
+            // Only invoke nextLevel if not on the tutorial level
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "Tutorial Level")
+            {
+                nextLevel.Invoke();
             }
         }
     }
